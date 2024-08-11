@@ -71,7 +71,7 @@
 
 ## 2. Make a Lump Sum Payment
 
-**Endpoint:** `POST /api/loan/:loanId/lumpsum`
+**Endpoint:** `POST /api/payment`
 
 **Description:** Makes a lump sum payment on a loan.
 
