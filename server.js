@@ -10,8 +10,6 @@ app.use(bodyParser.json());
 app.use('/api', loanRoutes);
 
 mongoose.connect('mongodb+srv://shaikhazeem4646:azeem464693@cluster0.oftz4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
 });
 
 app.listen(3000, () => {
