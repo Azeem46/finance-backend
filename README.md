@@ -19,7 +19,7 @@
 - **Mongoose**: ODM for MongoDB, used to model and interact with the database.
 
 ## Project Structure
-
+```plain
 .
 ├── models
 │ └── Loan.js # MongoDB schema for loan details
