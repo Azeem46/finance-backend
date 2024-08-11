@@ -1,6 +1,6 @@
 // routes/loan.js
 const express = require('express');
-const Loan = require('../models/loan.js');
+const Loan = require('../models/Loan.js');
 const router = express.Router();
 
 router.post('/loan', async (req, res) => {

@@ -20,6 +20,6 @@ const loanSchema = new mongoose.Schema({
   ],
 });
 
-const loan = mongoose.model('Loan', loanSchema);
+const Loan = mongoose.model('Loan', loanSchema);
 
-module.exports = loan;
+module.exports = Loan;
