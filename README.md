@@ -63,6 +63,41 @@
   "term": 5,
   "emiAmount": 188,
   "totalAmount": 12000,
+  "remainingAmount": 12000,
+  "emisRemaining": 64,
+  "lumpSums": []
+}
+```
+
+## 2. Make a Lump Sum Payment
+
+**Endpoint:** `POST /api/loan/:loanId/lumpsum`
+
+**Description:** Makes a lump sum payment on a loan.
+
+**Request Body:**
+
+```json
+{
+  "bankName": "IDIDI",
+  "borrowerName": "Dale",
+  "lumpSumAmount": 1000,
+  "emiNo": 5
+}
+```
+
+**Response:**
+
+```json
+{
+  "_id": "60b5fcd8b4c63409a1e273a4",
+  "bankName": "IDIDI",
+  "borrowerName": "Dale",
+  "principal": 10000,
+  "interest": 4,
+  "term": 5,
+  "emiAmount": 188,
+  "totalAmount": 12000,
   "remainingAmount": 11000,
   "emisRemaining": 59,
   "lumpSums": [
@@ -102,8 +137,8 @@
 ### 1 . Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/ledgerco-loan-system.git
-cd ledgerco-loan-system
+git clone https://github.com/your-username/finace-backend.git
+cd finance-backend
 
 ```
 
@@ -115,7 +150,7 @@ npm install
 
 ### 3. Set up MongoDB:
 
-Ensure MongoDB is installed and running on your machine. You can use the default configuration, which assumes MongoDB is running on mongodb://localhost:27017/ledgerco.
+Ensure MongoDB is installed and running on your machine. You can use the default configuration, which assumes MongoDB is running on your mongodb instance.
 
 ### 4. Start the server:
 
