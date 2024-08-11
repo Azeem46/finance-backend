@@ -1,4 +1,4 @@
-// models/Loan.js
+// models/loan.js
 const mongoose = require('mongoose');
 
 const loanSchema = new mongoose.Schema({
@@ -20,6 +20,6 @@ const loanSchema = new mongoose.Schema({
   ],
 });
 
-const Loan = mongoose.model('Loan', loanSchema);
+const loan = mongoose.model('Loan', loanSchema);
 
-module.exports = Loan;
+module.exports = loan;
