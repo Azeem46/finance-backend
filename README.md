@@ -28,7 +28,7 @@
 ├── server.js # Entry point for the Node.js server
 ├── package.json # Node.js project metadata and dependencies
 └── README.md # Project documentation
-
+```
 ## API Endpoints
 
 ### 1. Create a Loan
@@ -47,7 +47,7 @@
   "term": 5,
   "interest": 4
 }
-
+````
 **Response:**
 
 ```json
@@ -69,7 +69,7 @@
     }
   ]
 }
-
+```
 ## 3. Check Loan Balance
 
 **Endpoint:** `GET /api/balance`
@@ -90,7 +90,7 @@
   "amountPaid": 1000,
   "emisRemaining": 55
 }
-
+```
 ## Installation and Setup
 
 ### 1 . Clone the repository:
@@ -99,12 +99,12 @@
 git clone https://github.com/your-username/ledgerco-loan-system.git
 cd ledgerco-loan-system
 
-
+```
 ### 2. Install dependencies:
 
 ```bash
 npm install
-
+```
 ### 3. Set up MongoDB:
 Ensure MongoDB is installed and running on your machine. You can use the default configuration, which assumes MongoDB is running on mongodb://localhost:27017/ledgerco.
 
@@ -112,7 +112,7 @@ Ensure MongoDB is installed and running on your machine. You can use the default
 
 ```bash
 node server.js
-
+```
 **The server will be running on http://localhost:3000.**
 
 # Loan Management System
