@@ -19,6 +19,7 @@
 - **Mongoose**: ODM for MongoDB, used to model and interact with the database.
 
 ## Project Structure
+
 ```plain
 .
 ├── models
@@ -29,6 +30,7 @@
 ├── package.json # Node.js project metadata and dependencies
 └── README.md # Project documentation
 ```
+
 ## API Endpoints
 
 ### 1. Create a Loan
@@ -39,7 +41,7 @@
 
 **Request Body:**
 
-````json
+```json
 {
   "bankName": "IDIDI",
   "borrowerName": "Dale",
@@ -47,7 +49,8 @@
   "term": 5,
   "interest": 4
 }
-````
+```
+
 **Response:**
 
 ```json
@@ -70,6 +73,7 @@
   ]
 }
 ```
+
 ## 3. Check Loan Balance
 
 **Endpoint:** `GET /api/balance`
@@ -77,6 +81,7 @@
 **Description:** Retrieves the total amount paid and the remaining EMIs for a borrower.
 
 **Query Parameters:**
+
 - `bankName`: Name of the bank (e.g., `IDIDI`)
 - `borrowerName`: Name of the borrower (e.g., `Dale`)
 - `emiNo`: The EMI number to calculate up to (e.g., `5`)
@@ -91,6 +96,7 @@
   "emisRemaining": 55
 }
 ```
+
 ## Installation and Setup
 
 ### 1 . Clone the repository:
@@ -100,12 +106,15 @@ git clone https://github.com/your-username/ledgerco-loan-system.git
 cd ledgerco-loan-system
 
 ```
+
 ### 2. Install dependencies:
 
 ```bash
 npm install
 ```
+
 ### 3. Set up MongoDB:
+
 Ensure MongoDB is installed and running on your machine. You can use the default configuration, which assumes MongoDB is running on mongodb://localhost:27017/ledgerco.
 
 ### 4. Start the server:
@@ -113,6 +122,7 @@ Ensure MongoDB is installed and running on your machine. You can use the default
 ```bash
 node server.js
 ```
+
 **The server will be running on http://localhost:3000.**
 
 # Loan Management System
@@ -134,6 +144,3 @@ To interact with the API endpoints, you can use tools like [Postman](https://www
 ## Conclusion
 
 This project demonstrates a robust solution for managing loans, calculating EMIs, and handling payments using Node.js, Express, and MongoDB. The design is scalable, with a clear separation of concerns, making it easy to extend and maintain.
-
-
-````
