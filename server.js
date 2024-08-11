@@ -12,6 +12,7 @@ app.use('/api', loanRoutes);
 mongoose.connect('mongodb+srv://shaikhazeem4646:azeem464693@cluster0.oftz4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
