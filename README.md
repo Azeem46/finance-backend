@@ -135,5 +135,3 @@ To interact with the API endpoints, you can use tools like [Postman](https://www
 
 This project demonstrates a robust solution for managing loans, calculating EMIs, and handling payments using Node.js, Express, and MongoDB. The design is scalable, with a clear separation of concerns, making it easy to extend and maintain.
 
-
-````
